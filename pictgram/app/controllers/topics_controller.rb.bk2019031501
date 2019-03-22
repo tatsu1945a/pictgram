@@ -29,9 +29,9 @@ class TopicsController < ApplicationController
   end
 
   def show
-    @topic = Topic.find_by(id: params[:id])
-  end
 
+  end
+  
   private
   def topic_params
     params.require(:topic).permit(:image, :description)
